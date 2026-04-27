@@ -113,6 +113,19 @@ useEffect(() => { //Small timeout ensures the DOM element is fully mounted
     }
   }
 }, [])
+// seperate both civil and military aircrafts and combine it for the panel, similarly seperate ISS and Satellite constellation from one data so we will be able to edit ISS completely.
+  // useEffect(() => {
+  //     const viewer = viewerRef.current
+  //         if(!viewer) return 
+              
+  //     const toRemove = viewer.entities.values.filter(
+  //         (e) => e.properties && e.properties.type && e.properties.type.getValue() === 'Military Aircrafts'
+  //        )     
+  //     toRemove.forEach((e) => viewer.entities.remove(e))
+
+  //     if (!layers.military_aircraft) return
+  //     militry_aircrafts.slice(0,200).forEach((ac) => {
+  //         )
 
   useEffect(() => {
     const viewer = viewerRef.current
